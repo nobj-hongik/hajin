@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @thirdpost.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @thirdpost.content %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @thirdpost.image %>
+</p>
+
+<%= link_to 'Edit', edit_thirdpost_path(@thirdpost) %> |
+<%= link_to 'Back', thirdposts_path %>

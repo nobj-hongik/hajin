@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Firstposts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @firstposts.each do |firstpost| %>
+      <tr>
+        <td><%= firstpost.title %></td>
+        <td><%= firstpost.content %></td>
+        <td><%= firstpost.image %></td>
+        <td><%= link_to 'Show', firstpost %></td>
+        <td><%= link_to 'Edit', edit_firstpost_path(firstpost) %></td>
+        <td><%= link_to 'Destroy', firstpost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Firstpost', new_firstpost_path %>
