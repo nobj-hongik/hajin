@@ -7,7 +7,6 @@
     <tr>
       <th>Title</th>
       <th>Content</th>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +16,6 @@
       <tr>
         <td><%= secondpost.title %></td>
         <td><%= secondpost.content %></td>
-        <td><%= secondpost.image %></td>
         <td><%= link_to 'Show', secondpost %></td>
         <td><%= link_to 'Edit', edit_secondpost_path(secondpost) %></td>
         <td><%= link_to 'Destroy', secondpost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
